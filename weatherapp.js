@@ -19,7 +19,7 @@ async function CheckWeather(city){
         console.log(data);
         document.querySelector(".cityname").innerHTML=data.name;
         document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"°c";
-        document.querySelector(".fa").innerHTML=Math.round(data.main.temp*33.8)+"°F"
+        document.querySelector(".fa").innerHTML=Math.round(data.main.(temp*1.8)+32)+"°F"
         document.querySelector(".mintemp").innerHTML="min temp: "+Math.round(data.main.temp_min)+"celses";
         document.querySelector(".maxtemp").innerHTML="max temp: "+Math.round(data.main.temp_max)+"celses";
         document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
